@@ -1,0 +1,142 @@
+.footer {
+  background: rgba(0, 0, 0, 0.998);
+  background-image: url(../assets/all-images/p__logo-gray.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: 5% 10%;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  box-shadow: 0 -0px 20px rgba(255, 255, 255, 0.498);
+}
+
+
+
+.footer__logo span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer__logo-content {
+  color: rgba(255, 255, 255, 0.715);
+  margin-top: 15px;
+  line-height: 30px;
+  text-align: center;
+} 
+
+.quick__link {
+  border: none !important;
+  background: transparent !important;
+}
+
+.quick__link a {
+  color: rgba(255, 255, 255, 0.715);
+  text-decoration: none;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.quick__link a:hover {
+  color: #f9a826;
+}
+
+.footer__link-title {
+  color: #fff;
+}
+
+.office__info {
+  color: rgba(255, 255, 255, 0.715);
+  font-weight: 300; 
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #7c8a972f;
+  border-radius: 50px;
+  background: #020a4de9;
+}
+
+.newsletter input {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.newsletter span i {
+  color: #fff;
+}
+
+.footer__bottom {
+  border-top: 1.5px solid #7c8a972f;
+}
+@media only screen  and (max-width:1201px){
+    .logo__icons{
+      margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__logo-content {
+    font-size: 0.8rem;
+  }
+  #adapt{
+    display: none;
+  }
+
+  .quick__link,
+  .office__info {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .footer__link-title {
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .footer__bottom p {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  .logo__icons{
+    width: 25px;
+  }
+  
+  
+}
+
+.kot{
+    height: 25px;
+  }
+.hhh{
+
+  width: 30%;
+  height: 50%;
+  }
+  .logo__icons{
+    width: 25px;
+    
+  }
+  .logo__icons:hover{
+    filter: saturate(.6);
+  }
+
+  .flexos{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+  }
+  @media only screen and (max-width: 468px) {
+    .hhh{
+      width: 50%;
+      height: 20%;
+      margin: auto;
+      }
+    .footer__logo-content {
+      font-size: 0.5rem;
+    }
+  }

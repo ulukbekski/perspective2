@@ -1,0 +1,142 @@
+.slider__item {
+  max-width: 100%;
+  min-height: 550px;
+  height: 100vh;
+}
+.slider__item-01 {
+  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+    url("../assets/all-images/USAImages/IMG_2269.jpeg");
+  
+  background-position:  100% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-02 {
+  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+    url("../assets/all-images/USAImages/IMG_3745.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-03 {
+  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+    url("../assets/all-images/USAImages/IMG_9885.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__slider-section {
+  position: relative;
+}
+
+.text-light {
+  font-weight: 400;
+
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.text_light_p {
+  color: white;
+  text-align: center;
+  font-weight: 550;
+}
+.consalting {
+  display: flex;
+  padding: 0 100px;
+  flex-shrink: 1;
+  /* margin: auto; */
+  left: 0;
+  right: 0;
+  max-width: 900px;
+  gap: 10px;
+  margin: auto;
+  top: 70%;
+  position: absolute;
+  z-index: 100;
+}
+.for_registr {
+  padding: 0.7em;
+  box-sizing: border-box;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: none;
+}
+.button_for_registr {
+  color: #ffffff;
+  background: linear-gradient(to right top, #6f96f3, #164ed2);
+  border: none;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+.hero__slider {
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.slider__content {
+  padding-top: 150px;
+}
+
+.slider__content h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.reserve__btn {
+  background: #fff !important;
+  color: #000d6b !important;
+  border: none;
+  outline: none;
+}
+
+.reserve__btn a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000d6b;
+}
+
+.reserve__btn:hover {
+  background: #000d6b;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .slider__item {
+    min-height: 530px;
+    max-width: 100vw;
+  }
+
+  .slider__content {
+    margin-top: -50px;
+  }
+  .consalting {
+    flex-direction: column;
+    top: 50%;
+  }
+  .slider__content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider__item {
+    min-height: 450px;
+  }
+  .consalting{
+
+    padding: 0 50px
+  }
+  .slider__content h1 {
+    font-size: 1.5rem;
+  }
+  .for_registr {
+    font-size: 1em;
+  }
+  .button_for_registr {
+    font-size: 0.7em;
+  }
+}

@@ -1,0 +1,20 @@
+#USA-gallery{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery-item{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: .5s;
+}
+.gallery-item:hover{
+    box-shadow: 10px 1px 15px black;    
+    transform: scale(1.09);
+    border-radius: 35px;
+    
+}

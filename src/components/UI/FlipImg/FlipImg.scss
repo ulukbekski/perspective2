@@ -1,0 +1,82 @@
+
+.out{
+    width: 100%;
+    margin-top: 30px;
+
+    .mainFlipImg{
+      display: flex;
+      flex-wrap: wrap;
+      gap:20px;
+      align-items: center;
+      justify-content: center;
+
+      .flipImg{
+        
+        width: 400px;
+        height: 300px;
+        cursor: pointer;
+        position: relative;
+        .font{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          backface-visibility: hidden;
+          overflow: hidden;
+          transform: perspective(600px) rotateY(0deg);
+          position: absolute;
+          transition: .4s linear;
+          background-color: white ;
+          background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(189, 189, 189, 0.723));
+          border-radius: 15px;
+          img{
+            width: 150px;
+            height: 140px;
+            margin-bottom: 15px;
+          }
+          .scenter{
+            gap: 0;
+          }
+          .bigTitle{
+            font-size: 2em;
+            margin-bottom: 0;
+            color: #f79910;
+          }
+          div{
+            font-weight: bold;
+
+          }
+        }
+        .back{
+          width: 100%;
+          height: 100%;
+          display: flex;       
+          justify-content: center;
+          align-items: center;
+          backface-visibility: hidden;
+          overflow: hidden;
+          transform: perspective(600px) rotateY(180deg);
+          background-color: transparent;
+          position: absolute;
+          transition: .4s linear;
+          background-color: white ;
+          background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(189, 189, 189, 0.723));
+          border-radius: 15px;
+          .back-content{
+            width: 420px;
+            text-align: center;
+          }
+        }
+        &:hover{
+          .font{
+            transform: perspective(600px) rotateY(-180deg);
+          }
+          .back{
+            transform: perspective(600px) rotateY(0deg);
+          }
+        }
+      }
+    }
+  }
