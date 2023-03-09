@@ -36,13 +36,13 @@ const BlogItem = ({ item }) => {
           <Link to={`/countries/${title}`} className="blog__title">
             {title}
           </Link>
-          <p className="section__description mt-3">{description.length>350?description.slice(0,350)+"...":description}</p>
+          <p className="section__description mt-3">{description.length>250?description.slice(0,250)+"...":description}</p>
 
           <Link to={`/countries/${title}`} className="read__more">
-            Узнать больше
+            Подробнее
           </Link>
 
-          <div className="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
+          {/* <div className="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
             <span className="blog__author">
               <i className="ri-user-line"></i> {author}
             </span>
@@ -56,7 +56,7 @@ const BlogItem = ({ item }) => {
                 <i className="ri-time-line"></i> {time}
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Col>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {Route, Routes, Link, useNavigate, Navigate, Switch } from "react-router-dom";
 // import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
@@ -31,7 +31,11 @@ const Gallery = () => {
   return (
     <Helmet title="Галерея">
       <section>
-        <SimpleGallery galleryID="USA-gallery" images={images}/>
+     
+      <Switch>
+        <Route path="/gallery" element={<Navigate to="/gallery/USA"/> }/>
+        <Route path="/gallery/USA" element={  <SimpleGallery galleryID="USA-gallery" images={images}/>}/>
+        </Switch>
       </section>
     </Helmet>
   );

@@ -77,7 +77,7 @@ const Home = () => {
           <Row>
             <Col lg="12" className="mb-5 text-center">
               <h6 className="section__subtitle"></h6>
-              <h2 className="section__title">Наши лучшие стороны</h2>
+              <h2 className="section__title">Почему выбирают PERSPECTIVE</h2>
             </Col>
 
             <OutFlipImg/>

@@ -11,12 +11,15 @@
   overflow: hidden;
   background-color: aliceblue;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.322);
+  min-height: 550px;
+  position: relative;
  
 }
 .blog__item img{
   height: 200px;
   object-fit: cover;
 }
+
 
 .blog__time {
   border-top: 1px solid #7c8a972e;
@@ -27,6 +30,9 @@
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
 }
 
 .read__more:hover {

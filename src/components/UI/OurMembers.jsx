@@ -4,44 +4,37 @@ import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import Edil from "../../assets/all-images/Edil.jpg";
 import ava02 from "../../assets/all-images/ava-2.jpg";
-import ava03 from "../../assets/all-images/ava-3.jpg";
+import nursultan from "../../assets/all-images/IMG_0007.JPG";
 
 const OUR__MEMBERS = [
   {
     name: "Имран Токтосунов",
     experience: "5 лет опыта",
-    fbUrl: "#",
+    description: "Менеджер",
     instUrl: "#",
-    twitUrl: "#",
-    linkedinUrl: "#",
     imgUrl: ava02,
   },
   {
     name: "Эдил Аптандилов",
     experience: "2 года опыта",
-    fbUrl: "#",
+    description:"Просто красавчик",
     instUrl: "#",
-    twitUrl: "#",
-    linkedinUrl: "#",
     imgUrl: Edil,
   },
   {
-    name: "Cагын Камилов",
-    experience: "1 год опыта",
-    fbUrl: "#",
+    name: "Марат Тунтеев",
+    experience: "7 лет опыта",
+    description:"Сооснователь и управляющий",
     instUrl: "#",
-    twitUrl: "#",
-    linkedinUrl: "#",
-    imgUrl: ava03,
+    imgUrl: ava02,
   },
   {
     name: "Нурсултан Кубанов",
     experience: "10 лет опыта",
-    fbUrl: "#",
+    description:"Основатель компании",
+
     instUrl: "#",
-    twitUrl: "#",
-    linkedinUrl: "#",
-    imgUrl: ava02,
+    imgUrl: nursultan,
   },
 ];
 
@@ -54,28 +47,16 @@ const OurMembers = () => {
             <div className="single__member-img">
               <img src={item.imgUrl} alt="" className="w-100" />
 
-              <div className="single__member-social">
-                <Link to={item.fbUrl}>
-                  <i class="ri-facebook-line"></i>
-                </Link>
-                <Link to={item.twitUrl}>
-                  <i class="ri-twitter-line"></i>
-                </Link>
-
-                <Link to={item.linkedinUrl}>
-                  <i class="ri-linkedin-line"></i>
-                </Link>
-
-                <Link to={item.instUrl}>
-                  <i class="ri-instagram-line"></i>
-                </Link>
-              </div>
+              {/* <div className="single__member-social">
+                <p>{item.description}</p>
+              </div> */}
             </div>
 
             <h6 className="text-center mb-0 mt-3">{item.name}</h6>
             <p className="section__description text-center">
               {item.experience}
             </p>
+            <p className="section__description text-center">{item.description}</p>
           </div>
         </Col>
       ))}

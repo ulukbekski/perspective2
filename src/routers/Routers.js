@@ -8,6 +8,7 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
+import SimpleGallery from "../components/UI/SimpleGallery";
 
 const Routers = () => {
   return (
@@ -24,5 +25,6 @@ const Routers = () => {
     </Routes>
   );
 };
+
 
 export default Routers;
